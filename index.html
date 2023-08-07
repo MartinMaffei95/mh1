@@ -4,48 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MDHL | Home</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <header style="display: flex">
-      <img
-        style="width: 64px; height: 64px"
-        src="./assets/logo.png"
-        alt="logo image"
-      />
-      <div>
-        <h1>Mighty Ducks Hockey Leage</h1>
-        <nav>
-          <a href="#">Home</a>
-          <a href="./about.html">About MDHL</a>
-          <a href="./contact.html">contact</a>
-        </nav>
-      </div>
+    <header>
+      <h1>Mighty Ducks Hockey Leage</h1>
+      <nav>
+        <a class="active-page" href="#">Home</a>
+        <a href="./about.html">About MDHL</a>
+        <a href="./contact.html">contact</a>
+      </nav>
     </header>
     <!-- MAIN CONTENT -->
-    <main style="display: flex">
+    <main>
       <img
-        style="width: 600px"
+        class="hero-image"
         src="./assets//hockey_1.jpg"
         alt="image of hockey - nro1 -"
       />
-      <section>
-        <h2>Upcoming events</h2>
-        <ul>
-          <li>
-            <h3>August 4</h3>
-            <p>MDSL Foundraiser</p>
-          </li>
-          <li>
-            <h3>August 16</h3>
-            <p>Season Kick-off: Meet the Teamsr</p>
-          </li>
-          <li>
-            <h3>September 1</h3>
-            <p>First Game of the Season (Check Game Schedule for details)</p>
-          </li>
-        </ul>
-      </section>
+      <h2>Upcoming events</h2>
+      <div>
+        <div class="content">
+          <img src="./assets/logo.png" alt="logo image" />
+          <ul>
+            <li>
+              <h3>August 4</h3>
+              <p>MDSL Foundraiser</p>
+            </li>
+            <li>
+              <h3>August 16</h3>
+              <p>Season Kick-off: Meet the Teamsr</p>
+            </li>
+            <li>
+              <h3>September 1</h3>
+              <p>First Game of the Season (Check Game Schedule for details)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
     <footer></footer>
   </body>

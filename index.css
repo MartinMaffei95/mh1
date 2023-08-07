@@ -2,4 +2,113 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'comic-sans';
+}
+
+:root {
+  --green_color: rgb(74, 193, 76);
+  --green_color_dark: rgb(43, 114, 44);
+  --blue_color: rgb(74, 88, 193);
+  --blue_color_dark: rgb(49, 58, 125);
+  --gray_color: rgb(118, 119, 134);
+}
+
+header {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header nav {
+  display: flex;
+
+  gap: 1rem;
+}
+header a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: var(--blue_color);
+  color: white;
+  padding: 0.25rem 1rem;
+  border: solid 2px black;
+  box-shadow: 5px 5px var(--gray_color);
+}
+
+header a.active-page {
+  background-color: var(--green_color);
+}
+
+header a:hover {
+  background-color: var(--blue_color_dark);
+}
+header a.active-page:hover {
+  background-color: var(--green_color_dark);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h2 {
+  width: 80%;
+  padding: 0.5rem;
+  text-align: center;
+  border: solid 2px black;
+  font-size: 2rem;
+}
+
+.hero-image {
+  width: 80%;
+  height: 40vh;
+  object-fit: cover;
+  object-position: top;
+  border: solid 2px black;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  gap: 6rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 80%;
+  margin: auto;
+}
+
+.content img {
+  width: 8rem;
+  height: 100%;
+}
+
+.content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 0;
+    padding: 0;
+    flex-direction: row;
+  }
+  header nav {
+    transform: translateY(50%);
+  }
 }
